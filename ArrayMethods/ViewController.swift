@@ -11,6 +11,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    func reverse(string:String) -> String {
+        return String(string.reversed())
+    }
+    
     let message = "Hello Git!"
     
     
@@ -21,6 +25,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         print(message)
+        print(reverse(string: "reverse"))
         
         let isValue = linearSearch(for:10, array: [1,2,3,4,5,6,7,8,9,10])
         print(isValue)
