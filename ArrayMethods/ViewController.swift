@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         return String(string.reversed())
     }
     
+    func getDataFromString(name: String) -> String {
+        return name
+    }
+    
     let message = "Hello Git!"
     
     
@@ -26,6 +30,8 @@ class ViewController: UIViewController {
         
         print(message)
         print(reverse(string: "reverse"))
+        
+        print(getDataFromString(name: "Suresh"))
         
         let isValue = linearSearch(for:10, array: [1,2,3,4,5,6,7,8,9,10])
         print(isValue)
