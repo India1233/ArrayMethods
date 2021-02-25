@@ -11,11 +11,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let message = "Hello Git!"
+    
+    
     var numbers:Array<Int> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        print(message)
         
         let isValue = linearSearch(for:10, array: [1,2,3,4,5,6,7,8,9,10])
         print(isValue)
